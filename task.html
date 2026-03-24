@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Internship Project</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>My Web Project</h1>
+<p>Portfolio | To-Do App | Product Filter</p>
+</header>
+
+<!-- Portfolio Section -->
+
+<section class="portfolio">
+<h2>About Me</h2>
+<p>Hello! I am a web development intern. I love building websites using HTML, CSS and JavaScript.</p>
+
+<h3>My Skills</h3>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
+</section>
+
+
+<!-- To Do App -->
+
+<section class="todo">
+<h2>To-Do List</h2>
+
+<input type="text" id="taskInput" placeholder="Enter task">
+<button onclick="addTask()">Add</button>
+
+<ul id="taskList"></ul>
+
+</section>
+
+
+<!-- Product Filter -->
+
+<section class="products">
+
+<h2>Product List</h2>
+
+<select id="filter" onchange="filterProducts()">
+<option value="all">All</option>
+<option value="electronics">Electronics</option>
+<option value="clothes">Clothes</option>
+</select>
+
+<select id="sort" onchange="sortProducts()">
+<option value="default">Sort</option>
+<option value="low">Price Low to High</option>
+<option value="high">Price High to Low</option>
+</select>
+
+<div id="productContainer"></div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
